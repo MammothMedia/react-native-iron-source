@@ -3,8 +3,8 @@ package co.squaretwo.ironsource;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
-import android.support.annotation.Nullable;
-
+//import androidx.annotation.Nullable;
+import androidx.annotation.Nullable;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.Promise;
@@ -109,6 +109,15 @@ public class RNIronSourceRewardedVideoModule extends ReactContextBaseJavaModule 
                 }
             });
         }
+        new Handler(Looper.getMainLooper()).post(new Runnable() {
+            @Override
+            public void run() {
+                boolean available = IronSource.isRewardedVideoAvailable();
+                if (available) {
+                    sendEvent("ironSourceRewardedVideoAvailable", null);
+                }
+            }
+        });
     }
 
     @ReactMethod

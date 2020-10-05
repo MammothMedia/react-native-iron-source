@@ -1,6 +1,6 @@
 {
-  "name": "@wowmaking/react-native-iron-source",
-  "version": "3.3.6",
+  "name": "@mammothmedia/react-native-iron-source",
+  "version": "3.3.7",
   "description": "React Native package to interface the ironSource SDK.  https://ironsrc.com",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/wowmaking/react-native-iron-source.git"
+    "url": "https://github.com/MammothMedia/react-native-iron-source.git"
   },
   "homepage": "https://github.com/wowmaking/react-native-iron-source#README",
   "author": {

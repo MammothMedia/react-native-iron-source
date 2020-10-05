@@ -12,5 +12,6 @@ xcuserdata/
 .DS_Store
 *.iml
 local.properties
+android/build
 
 node_modules
