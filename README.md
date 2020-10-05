@@ -1,5 +1,6 @@
 
-# @wowmaking/react-native-iron-source
+# @mammothmedia/react-native-iron-source
+> this is a fork from @wowmaking, it patches the support libs on android R
 
 [Iron Source SDK](https://developers.ironsrc.com/) React Native bridge. 
 Supports all ad units (Rewarded Video, Interstitial, Banner, Offerwall).
