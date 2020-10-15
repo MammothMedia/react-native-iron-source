@@ -17,55 +17,31 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
 
   s.dependency "React"
-  s.dependency "IronSourceSDK", "~> 6"
+  s.dependency "IronSourceSDK", "7.0.3.0"
 
   s.subspec "Core" do |ss|
     ss.source_files  = "ios/**/*.{h,m}"
   end
   s.subspec "AdColony" do |ss|
-    ss.dependency         "IronSourceAdColonyAdapter", "> 1"
+    ss.dependency         "IronSourceAdColonyAdapter", "4.3.4"
   end
   s.subspec "Admob" do |ss|
-    ss.dependency         "IronSourceAdMobAdapter", "> 1"
-  end
-  s.subspec "Amazon" do |ss|
-    ss.dependency         "IronSourceAmazonAdapter", "> 1"
+    ss.dependency         "IronSourceAdMobAdapter", "4.3.17"
   end
   s.subspec "AppLovin" do |ss|
-    ss.dependency         "IronSourceAppLovinAdapter", "> 1"
-  end
-  s.subspec "Chartboost" do |ss|
-    ss.dependency         "IronSourceChartboostAdapter", "> 1"
+    ss.dependency         "IronSourceAppLovinAdapter", "4.3.19"
   end
   s.subspec "Facebook" do |ss|
-    ss.dependency         "IronSourceFacebookAdapter", "> 1"
-  end
-  s.subspec "Fyber" do |ss|
-    ss.dependency         "IronSourceFyberAdapter", "> 1"
+    ss.dependency         "IronSourceFacebookAdapter", "4.3.20"
   end
   s.subspec "HyprMX" do |ss|
-    ss.dependency         "IronSourceHyprMXAdapter", "> 1"
-  end
-  s.subspec "InMobi" do |ss|
-    ss.dependency         "IronSourceInMobiAdapter", "> 1"
-  end
-  s.subspec "Maio" do |ss|
-    ss.dependency         "IronSourceMaioAdapter", "> 1"
-  end
-  s.subspec "Mintegral" do |ss|
-    ss.dependency         "IronSourceMintegralAdapter", "> 1"
-  end
-  s.subspec "Tapjoy" do |ss|
-    ss.dependency         "IronSourceTapjoyAdapter", "> 1"
-  end
-  s.subspec "TikTok" do |ss|
-    ss.dependency         "IronSourceTikTokAdapter", "> 1"
+    ss.dependency         "IronSourceHyprMXAdapter", "4.1.6"
   end
   s.subspec "UnityAds" do |ss|
-    ss.dependency         "IronSourceUnityAdsAdapter", "> 1"
+    ss.dependency         "IronSourceUnityAdsAdapter", "4.3.5"
   end
   s.subspec "Vungle" do |ss|
-    ss.dependency         "IronSourceVungleAdapter", "> 1"
+    ss.dependency         "IronSourceVungleAdapter", "4.3.8"
   end
 
   if defined?($RNIronSourceAsStaticFramework)
