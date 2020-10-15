@@ -68,8 +68,10 @@ RCT_EXPORT_METHOD(loadBanner:(NSString *)bannerSizeDescription
     if (self.bannerView) {
         [self destroyBanner];
     }
-    [IronSource loadBannerWithViewController:RCTPresentedViewController()
-                                        size:[[ISBannerSize alloc] initWithDescription:bannerSizeDescription]];
+
+    // Causes compilation error
+    // [IronSource loadBannerWithViewController:RCTPresentedViewController()
+    //                                     size:[[ISBannerSize alloc] initWithDescription:bannerSizeDescription]];
 
     [[NSNotificationCenter defaultCenter] removeObserver:self name:RCTBridgeWillReloadNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self
