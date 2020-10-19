@@ -34,9 +34,6 @@ Pod::Spec.new do |s|
   s.subspec "Facebook" do |ss|
     ss.dependency         "IronSourceFacebookAdapter", "4.3.20"
   end
-  s.subspec "HyprMX" do |ss|
-    ss.dependency         "IronSourceHyprMXAdapter", "4.1.6"
-  end
   s.subspec "UnityAds" do |ss|
     ss.dependency         "IronSourceUnityAdsAdapter", "4.3.5"
   end
