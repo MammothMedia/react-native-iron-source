@@ -18,37 +18,17 @@ Pod::Spec.new do |s|
 
   s.dependency "React"
   s.dependency 'IronSourceSDK','7.0.3.0'
+  s.dependency 'IronSourceSDK','7.0.3.0'
   s.dependency 'IronSourceAdColonyAdapter','4.3.4.1'
-  s.dependency 'IronSourceAdMobAdapter','4.3.17'
-  s.dependency 'IronSourceAppLovinAdapter','4.3.19'
-  s.dependency 'IronSourceFacebookAdapter','4.3.20'
-  s.dependency 'IronSourceHyprMXAdapter','4.1.7'
-  s.dependency 'IronSourceUnityAdsAdapter','4.3.5'
-  s.dependency 'IronSourceVungleAdapter','4.3.7'
-
+  s.dependency 'IronSourceAdMobAdapter','4.3.17.1'
+  s.dependency 'IronSourceAppLovinAdapter','4.3.19.1'
+  s.dependency 'IronSourceFacebookAdapter','4.3.20.1'
+  s.dependency 'IronSourceHyprMXAdapter','4.1.7.0'
+  s.dependency 'IronSourceUnityAdsAdapter','4.3.5.1'
+  s.dependency 'IronSourceVungleAdapter','4.3.7.1'
+  
   s.subspec "Core" do |ss|
     ss.source_files  = "ios/**/*.{h,m}"
-  end
-  s.subspec "AdColony" do |ss|
-    ss.dependency         "IronSourceAdColonyAdapter", "4.3.4.1"
-  end
-  s.subspec "Admob" do |ss|
-    ss.dependency         "IronSourceAdMobAdapter", "4.3.17"
-  end
-  s.subspec "AppLovin" do |ss|
-    ss.dependency         "IronSourceAppLovinAdapter", "4.3.19"
-  end
-  s.subspec "Facebook" do |ss|
-    ss.dependency         "IronSourceFacebookAdapter", "4.3.20"
-  end
-  s.subspec "HyprMx" do |ss|
-    ss.dependency         "IronSourceHyprMXAdapter", "4.1.7"
-  end
-  s.subspec "UnityAds" do |ss|
-    ss.dependency         "IronSourceUnityAdsAdapter", "4.3.5"
-  end
-  s.subspec "Vungle" do |ss|
-    ss.dependency         "IronSourceVungleAdapter", "4.3.7"
   end
 
   if defined?($RNIronSourceAsStaticFramework)
