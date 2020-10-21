@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
 
   s.dependency "React"
   s.dependency "IronSourceSDK", "7.0.3.0"
+  s.dependency 'IronSourceAdColonyAdapter','4.3.4.1'
 
   s.subspec "Core" do |ss|
     ss.source_files  = "ios/**/*.{h,m}"
