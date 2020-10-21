@@ -17,8 +17,14 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
 
   s.dependency "React"
-  s.dependency "IronSourceSDK", "7.0.3.0"
-  s.dependency 'IronSourceAdColonyAdapter','4.3.4.1'
+  s.dependency 'IronSourceSDK','7.0.3.0'
+  s.dependency 'IronSourceAdColonyAdapter','4.3.4'
+  s.dependency 'IronSourceAdMobAdapter','4.3.17'
+  s.dependency 'IronSourceAppLovinAdapter','4.3.19'
+  s.dependency 'IronSourceFacebookAdapter','4.3.20'
+  s.dependency 'IronSourceHyprMXAdapter','4.1.7'
+  s.dependency 'IronSourceUnityAdsAdapter','4.3.5'
+  s.dependency 'IronSourceVungleAdapter','4.3.8'
 
   s.subspec "Core" do |ss|
     ss.source_files  = "ios/**/*.{h,m}"
@@ -34,6 +40,9 @@ Pod::Spec.new do |s|
   end
   s.subspec "Facebook" do |ss|
     ss.dependency         "IronSourceFacebookAdapter", "4.3.20"
+  end
+  s.subspec "HyprMx" do |ss|
+    ss.dependency         "IronSourceHyprMXAdapter", "4.1.7"
   end
   s.subspec "UnityAds" do |ss|
     ss.dependency         "IronSourceUnityAdsAdapter", "4.3.5"
