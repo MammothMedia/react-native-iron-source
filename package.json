@@ -1,6 +1,6 @@
 {
   "name": "@mammothmedia/react-native-iron-source",
-  "version": "7.0.3.0",
+  "version": "7.0.3",
   "description": "React Native package to interface the ironSource SDK.  https://ironsrc.com",
   "main": "index.js",
   "scripts": {
