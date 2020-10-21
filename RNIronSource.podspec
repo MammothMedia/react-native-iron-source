@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.dependency "React"
   s.dependency 'IronSourceSDK','7.0.3.0'
-  s.dependency 'IronSourceAdColonyAdapter','4.3.4.0'
+  s.dependency 'IronSourceAdColonyAdapter','4.3.4.1'
   s.dependency 'IronSourceAdMobAdapter','4.3.17'
   s.dependency 'IronSourceAppLovinAdapter','4.3.19'
   s.dependency 'IronSourceFacebookAdapter','4.3.20'
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
     ss.source_files  = "ios/**/*.{h,m}"
   end
   s.subspec "AdColony" do |ss|
-    ss.dependency         "IronSourceAdColonyAdapter", "4.3.4.0"
+    ss.dependency         "IronSourceAdColonyAdapter", "4.3.4.1"
   end
   s.subspec "Admob" do |ss|
     ss.dependency         "IronSourceAdMobAdapter", "4.3.17"
