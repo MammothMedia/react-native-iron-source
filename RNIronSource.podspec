@@ -11,14 +11,14 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/squaretwo/react-native-iron-source"
   s.license      = "MIT"
   s.author       = { "Ben Yee" => "benyee@gmail.com" }
-  s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/wowmaking/react-native-iron-source", tag: "v" + s.version.to_s }
+  s.platform     = :ios, "7.0.3.0"
+  s.source       = { :git => "https://github.com/MammothMedia/react-native-iron-source", tag: "v" + s.version.to_s }
   s.requires_arc = true
   s.default_subspec = 'Core'
 
   s.dependency "React"
   s.dependency 'IronSourceSDK','7.0.3.0'
-  s.dependency 'IronSourceAdColonyAdapter','4.3.4'
+  s.dependency 'IronSourceAdColonyAdapter','4.3.4.0'
   s.dependency 'IronSourceAdMobAdapter','4.3.17'
   s.dependency 'IronSourceAppLovinAdapter','4.3.19'
   s.dependency 'IronSourceFacebookAdapter','4.3.20'
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
     ss.source_files  = "ios/**/*.{h,m}"
   end
   s.subspec "AdColony" do |ss|
-    ss.dependency         "IronSourceAdColonyAdapter", "4.3.4"
+    ss.dependency         "IronSourceAdColonyAdapter", "4.3.4.0"
   end
   s.subspec "Admob" do |ss|
     ss.dependency         "IronSourceAdMobAdapter", "4.3.17"
