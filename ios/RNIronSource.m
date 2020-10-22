@@ -1,4 +1,5 @@
 #import "RNIronSource.h"
+#import <FBAudienceNetwork/FBAdSettings.h>
 
 @implementation RNIronSource {
     RCTResponseSenderBlock _requestRewardedVideoCallback;
@@ -19,6 +20,7 @@ RCT_EXPORT_METHOD(initializeIronSource:(NSString *)appId
                   rejector:(RCTPromiseRejectBlock)reject)
 {
     NSLog(@"initializeIronSource called!! with key %@ and user id %@", appId, userId);
+    [FBAdSettings setDataProcessingOptions:@[]];
     [IronSource setUserId:userId];
     [IronSource initWithAppKey:appId];
 
