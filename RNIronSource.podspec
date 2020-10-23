@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
 
   s.dependency "React"
   s.dependency 'IronSourceSDK','7.0.3.0'
-  s.dependency 'IronSourceSDK','7.0.3.0'
   s.dependency 'IronSourceAdColonyAdapter','4.3.4.1'
   s.dependency 'IronSourceAdMobAdapter','4.3.17.1'
   s.dependency 'IronSourceAppLovinAdapter','4.3.19.1'
